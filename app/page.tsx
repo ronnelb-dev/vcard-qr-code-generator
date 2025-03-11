@@ -1,4 +1,3 @@
-import Image from "next/image";
 import BusinessForm from "@/app/ui/business-form";
 
 export default function Home() {

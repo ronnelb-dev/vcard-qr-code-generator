@@ -122,7 +122,7 @@ export default function BusinessForm() {
                 htmlFor="last-name"
                 className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
-                Job
+                Job Title
               </label>
               <div className="mt-2">
                 <input

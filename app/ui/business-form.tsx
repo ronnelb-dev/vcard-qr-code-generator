@@ -39,13 +39,13 @@ export default function BusinessForm() {
     <div>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12 text-center">
-          <h2 className="text-base/7 font-semibold text-gray-900">
+          <h2 className="text-base/7 font-semibold text-gray-900 dark:text-white">
             vCard QR Code Generator
           </h2>
         </div>
 
         <div className="border-b border-gray-900/10">
-          <h2 className="text-base/7 font-semibold text-gray-900">
+          <h2 className="text-base/7 font-semibold text-gray-900 dark:text-white">
             Business Information
           </h2>
           {/* <p className="mt-1 text-sm/6 text-gray-600">
@@ -57,7 +57,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-3">
               <label
                 htmlFor="first-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 First name
               </label>
@@ -78,7 +78,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-3">
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 Last name
               </label>
@@ -99,7 +99,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-3">
               <label
                 htmlFor="first-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 Company
               </label>
@@ -120,7 +120,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-3">
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 Job
               </label>
@@ -141,7 +141,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="country"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 Phone
               </label>
@@ -167,7 +167,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-4">
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 Number
               </label>
@@ -188,7 +188,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-4">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 Email address
               </label>
@@ -209,7 +209,7 @@ export default function BusinessForm() {
             <div className="sm:col-span-4">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 URL/Website
               </label>
@@ -229,7 +229,7 @@ export default function BusinessForm() {
             <div className="col-span-full">
               <label
                 htmlFor="address"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-gray-900 dark:text-white"
               >
                 Address
               </label>

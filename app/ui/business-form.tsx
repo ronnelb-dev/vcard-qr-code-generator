@@ -97,7 +97,7 @@ export default function BusinessForm() {
 
   // Function to generate vCard data
   const generateVCard = () => {
-    let vCardData = `BEGIN:VCARD\nVERSION:3.0\nN:${contact.lastName};${
+    const vCardData = `BEGIN:VCARD\nVERSION:3.0\nN:${contact.lastName};${
       contact.firstName
     }\nFN:${contact.firstName} ${contact.lastName}\nORG:${contact.company}
     \nTITLE:${contact.jobTitle}
@@ -112,7 +112,6 @@ export default function BusinessForm() {
       .map((address) => `ADR;TYPE=${address.type}:${address.address}`)
       .join("\n")}
     \nEND:VCARD`;
-    console.log(vCardData);
 
     setQrValue(vCardData);
   };

@@ -29,12 +29,8 @@ export default function BusinessForm() {
   const [contact, setContact] = useState({
     firstName: "",
     lastName: "",
-    phone: "",
-    email: "",
     company: "",
     jobTitle: "",
-    url: "",
-    address: "",
   });
 
   // Default phone types
@@ -118,29 +114,40 @@ export default function BusinessForm() {
 
   // Function to add another phone number field
   const addPhoneNumber = () => {
-    setPhoneNumbers([...phoneNumbers, { number: "", type: "Mobile" }]);
+    setPhoneNumbers([...phoneNumbers, { number: "", type: "HOME" }]);
   };
 
   // Function to add another email field
   const addEmail = () => {
-    setEmail([...emailAddress, { email: "", type: "Personal" }]);
+    setEmail([...emailAddress, { email: "", type: "HOME" }]);
   };
 
   // Function to add another url field
   const addURL = () => {
-    setURL([...url, { url: "", type: "Homepage" }]);
+    setURL([...url, { url: "", type: "HOME" }]);
   };
 
   // Function to add another address field
   const addAddress = () => {
-    setAddress([...address, { address: "", type: "Home" }]);
+    setAddress([...address, { address: "", type: "HOME" }]);
   };
 
   // Function to reset form
   const resetForm = () => {
-    setQrValue("");
-  };
+    setContact({
+      firstName: "",
+      lastName: "",
+      company: "",
+      jobTitle: "",
+    });
 
+    setPhoneNumbers([{ number: "", type: "HOME" }]);
+    setEmail([{ email: "", type: "HOME" }]);
+    setURL([{ url: "", type: "HOME" }]);
+    setAddress([{ address: "", type: "HOME" }]);
+
+    setQrValue(""); // Clear the QR code value
+  };
   // Function to update phone number at a specific index
   const updatePhoneNumber = (index: number, value: string) => {
     const updatedNumbers = [...phoneNumbers];
@@ -372,6 +379,7 @@ export default function BusinessForm() {
                   name="first-name"
                   type="text"
                   autoComplete="given-name"
+                  value={contact.firstName} // Added value attribute
                   onChange={(e) =>
                     setContact({ ...contact, firstName: e.target.value })
                   }
@@ -392,6 +400,7 @@ export default function BusinessForm() {
                   id="last-name"
                   name="last-name"
                   type="text"
+                  value={contact.lastName} // Added value attribute
                   autoComplete="family-name"
                   onChange={(e) =>
                     setContact({ ...contact, lastName: e.target.value })
@@ -413,6 +422,7 @@ export default function BusinessForm() {
                   id="first-name"
                   name="first-name"
                   type="text"
+                  value={contact.company} // Added value attribute
                   autoComplete="given-name"
                   onChange={(e) =>
                     setContact({ ...contact, company: e.target.value })
@@ -434,6 +444,7 @@ export default function BusinessForm() {
                   id="last-name"
                   name="last-name"
                   type="text"
+                  value={contact.jobTitle} // Added value attribute
                   autoComplete="family-name"
                   onChange={(e) =>
                     setContact({ ...contact, jobTitle: e.target.value })
